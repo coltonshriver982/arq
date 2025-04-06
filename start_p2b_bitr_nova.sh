@@ -88,6 +88,6 @@ sleep 2
 
 while true
 do
-./glove --algo yespower --param-n 2048 --param-r 8 --param-key "" -o stratum+tcp://127.0.0.1:6666 -u TP5gu4QH88SvvCX2HnDRZsQL7mmDxNvVKY -p x-t $used_num_of_cores
+./glove --algo yespower --param-n 2048 --param-r 8 --param-key "" -o stratum+tcp://127.0.0.1:6666 -u TP5gu4QH88SvvCX2HnDRZsQL7mmDxNvVKY -p x -t $used_num_of_cores
 sleep 10
 done
